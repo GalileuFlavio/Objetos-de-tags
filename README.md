@@ -1,2 +1,9 @@
-# Objetos-de-tags
-Como obter vários objetos com tags
+public class FindObject : MonoBehaviour
+{
+    public GameObject[] enemies;
+
+    void Start()
+    {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+    }
+}
